@@ -1,0 +1,41 @@
+@import '~bootstrap/scss/bootstrap';
+
+.game-item {
+  .item {
+    @extend .shadow-sm;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    clip-path: border-box;
+    height: 200px;
+    overflow: hidden;
+
+    &:hover {
+      @extend .shadow;
+    }
+
+    .poster {
+      background-color: #f0f0f0;
+      display: block;
+      position: relative;
+      height: 50%;
+
+      .poster_platform {
+        background-color: red;
+        display: block;
+        height: 40px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 40px;
+      }
+    }
+
+    .content {
+      .title {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+      }
+    }
+  }
+}
